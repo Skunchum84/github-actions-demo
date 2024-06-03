@@ -66,7 +66,7 @@ jobs:
       - name: Deploy to Render
         uses: fjogeleit/http-request-action@v1
         with:
-          url: https://api.render.com/v1/services/srv-coomuvgl5elc738kkbjg/deploys
+          url: https://api.render.com/v1/services/srv-cpf39utds78s7395hut0/deploys
           method: POST
           bearerToken: '${{ secrets.RENDER_TOKEN }}'
           data: '{"imageUrl":"${{ needs.build.outputs.image-tag }}"}'
